@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 
 const NotFound = () => {
   return <div>Not Found :(</div>;

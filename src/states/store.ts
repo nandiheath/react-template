@@ -4,6 +4,7 @@
 import { createBrowserHistory } from 'history';
 import { configureStore } from '@reduxjs/toolkit';
 import { routerMiddleware, connectRouter } from 'connected-react-router';
+import appReducer from './slices/app';
 
 export const history = createBrowserHistory();
 
@@ -16,7 +17,14 @@ const preloadedState = {};
 export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(routerMiddleware(history)),
-  reducer: rootReducer(history),
+  reducer: {
+    app: appReducer,
+    ...rootReducer(history),
+  },
 
   preloadedState,
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+
+export type AppDispatch = typeof store.dispatch;

@@ -16,7 +16,7 @@ const AppRoutes = () => {
         </Route>
 
         <Route path="/app" element={<MenuLayout />}>
-          <Route element={<Dashboard />} />
+          <Route path="i" element={<Dashboard />} />
         </Route>
 
         <Route path="/" element={<Navigate to="/app" />} />

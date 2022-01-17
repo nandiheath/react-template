@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { store } from 'store/configureStore';
+import { store } from 'states/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import AppRoutes from './routes';
+import './index.css';
+import StatedThemeProvider from 'components/apps/StatedThemeProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <AppRoutes />
+      <StatedThemeProvider>
+        <AppRoutes />
+      </StatedThemeProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

@@ -11,15 +11,15 @@ This template should help saving time from these stuff.
 
 ### React w/ Typescript
 
-### Redux
+### Redux Toolkits
 
-### React-router w/ Redux
+### React-router
 
 ### Tailwind
 
 ### Material UI
 
-### Styled Components
+### Emotion
 
 ### Eslint/Prettier/Husky
 

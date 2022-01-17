@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 
 const Dashboard = () => {
-  return <div>Not Found :(</div>;
+  return <div>Dashboard</div>;
 };
 
 export default Dashboard;

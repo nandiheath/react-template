@@ -22,7 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "components/*": ["src/components/*"],
-      "store/*": ["src/store/*"]
+      "states/*": ["src/states/*"],
+      "lib/*": ["src/lib/*"]
     }
   },
   "exclude": ["node_modules", "public", ".cache"]
